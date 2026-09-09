@@ -7,15 +7,15 @@ router.get("/", (req, res) => {
 });
 
 router.post("/", (req, res) => {
-  res.json({ message: "hello" });
+  res.json({ httpMethod: "post" });
 });
 
 router.put("/", (req, res) => {
-  res.json({ message: "hello" });
+  res.json({ httpMethod: "put" });
 });
 
 router.delete("/", (req, res) => {
-  res.json({ message: "hello" });
+  res.json({ httpMethod: "delete" });
 });
 
 export default router;
